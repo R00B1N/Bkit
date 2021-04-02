@@ -91,7 +91,7 @@ Esta herramienta fue creada para fines educativos y de practica, usela bajo su r
 """
 
 def switch():
-	os.system('cls')
+	os.system('clear')
 	print(Fore.YELLOW)
 	print(banner)
 	time.sleep(1)
@@ -134,7 +134,7 @@ while True:
 
 	elif ask==2:
 		def defkey():
-			os.system('cls')
+			os.system('clear')
 			print(Fore.RED)
 			print(banner_2)
 			menu = """
@@ -254,7 +254,7 @@ while True:
 
 	elif ask==3:
 		def srchx():
-			os.system('cls')
+			os.system('clear')
 			print(Fore.CYAN)
 			print(banner_3)
 			print(Fore.GREEN)
@@ -320,7 +320,7 @@ while True:
 
 	elif ask==4:
 		def nmap():
-			os.system('cls')
+			os.system('clear')
 			print(Fore.YELLOW)
 			print(banner_4)
 			print(Fore.CYAN)
@@ -386,7 +386,7 @@ while True:
 
 	elif ask==5:
 		def sql():
-			os.system('cls')
+			os.system('clear')
 			print(Fore.RED)
 			print(banner_5)
 			print(Fore.YELLOW)
@@ -446,7 +446,7 @@ while True:
 
 	elif ask==6:
 		def adbxploit():
-			os.system('cls')
+			os.system('clear')
 			print(Fore.RED)
 			print(banner_6)
 			print(Fore.CYAN)
@@ -492,13 +492,13 @@ while True:
 				subprocess.run(f'adb connect {out}')
 				print("Presione una tecla para Continuar...")
 				input()
-				os.system('cls')
+				os.system('clear')
 
 			elif ask==1:
 				subprocess.run('adb devices')
 				print("Presione una tecla para Continuar...")
 				input()
-				os.system('cls')
+				os.system('clear')
 				print(Fore.RED)
 
 			elif ask==2:
@@ -506,7 +506,7 @@ while True:
 				disconnect = (ip+':'+"5555")
 				subprocess.run(f'adb disconnect {disconnect}')
 				time.sleep(3)
-				os.system('cls')
+				os.system('clear')
 				print(Fore.RED)
 
 			elif ask==3:
@@ -523,14 +523,14 @@ while True:
 					subprocess.run('adb root')
 					subprocess.run('adb shell')
 					time.sleep(1)
-					os.system('cls')
+					os.system('clear')
 					print(Fore.GREEN)
 				elif root==2:
 					print("Se abrira una shell en modo normal...")
 					time.sleep(2)
 					subprocess.run('adb shell')
 					time.sleep(1)
-					os.system('cls')
+					os.system('clear')
 					print(Fore.GREEN)
 
 			elif ask==4:
@@ -544,7 +544,7 @@ while True:
 				print("Revisa la ruta para ver tu captura de pantalla")
 				print("\nPresiona una tecla...")
 				input()
-				os.system('cls')
+				os.system('clear')
 				print(Fore.RED)
 
 			elif ask==5:
@@ -568,7 +568,7 @@ while True:
 				subprocess.run('adb shell pm list packages')
 				print("Presione una tecla.")
 				input()
-				os.system('cls')
+				os.system('clear')
 				print(Fore.RED)
 
 			elif ask==8:
@@ -576,14 +576,14 @@ while True:
 				subprocess.run(f'adb install {ruta}')
 				print("\nPresione una tecla para Continuar...")
 				input()
-				os.system('cls')
+				os.system('clear')
 				print(Fore.GREEN)
 
 			elif ask==7:
 				subprocess.run('adb shell pm list packages',)
 				print("Presione una tecla.")
 				input()
-				os.system('cls')
+				os.system('clear')
 				print(Fore.RED)
 
 			elif ask==8:
@@ -591,12 +591,12 @@ while True:
 				subprocess.run(f'adb install {ruta}')
 				print("\nPresione una tecla para Continuar...")
 				input()
-				os.system('cls')
+				os.system('clear')
 				print(Fore.GREEN)
 
 			elif ask==9:
 				subprocess.run('adb reboot')
-				os.system('cls')
+				os.system('clear')
 				print(Fore.YELLOW)
 
 			elif ask==10:
@@ -604,7 +604,7 @@ while True:
 				subprocess.run(f'adb uninstall {n_p_a}')
 				print("Presione una tecla para Continuar...")
 				input()
-				os.system('cls')
+				os.system('clear')
 				print(Fore.GREEN)
 
 			elif ask==11:
@@ -613,7 +613,7 @@ while True:
 				print("Los Datos Moviles han sido Activados")
 				print("\nPresione una tecla...")
 				input()
-				os.system('cls')
+				os.system('clear')
 				print(Fore.RED)
 
 			elif ask==12:
@@ -630,7 +630,7 @@ while True:
 				subprocess.run('adb shell cat/proc/cpuinfo')
 				print("\nPresione una tecla para Continuar...")
 				input()
-				os.system('cls')
+				os.system('clear')
 				print(Fore.MAGENTA)
 
 			elif ask==14:
@@ -643,7 +643,7 @@ while True:
 				print("Verifique su archivo...")
 				print("Presione una tecla para continuar...")
 				input()
-				os.system('cls')
+				os.system('clear')
 				print(Fore.GREEN)
 
 			elif ask==15:
@@ -654,7 +654,7 @@ while True:
 				subprocess.run(f'adb pull {ruta} {destino}')
 				print("Presione una tecla para continuar...")
 				input()
-				os.system('cls')
+				os.system('clear')
 				print(Fore.MAGENTA)
 
 			elif ask==16:
@@ -665,7 +665,7 @@ while True:
 				subprocess.run(f'adb pull {ruta} {destino}')
 				print("Presione una tecla para continuar...")
 				input()
-				os.system('cls')
+				os.system('clear')
 				print(Fore.RED)
 
 			elif ask==17:
