@@ -1,0 +1,28 @@
+#!/bin/bash
+echo "Ahora se instalara Blacksterkit en su terminal"
+sleep 2s
+pkg install python
+pkg install dirb
+sleep 1s
+pkg install sqlmap
+sleep 1s
+pkg install nmap
+sleep 1s
+pip install colorama
+sleep 1s
+python3 -m pip install googlesearch-python
+sleep 1s
+python3 -m pip install wpspin
+sleep 1s
+git clone https://github.com/MasterDevX/Termux-ADB
+sleep 1s
+cd Termux-ADB
+bash InstallTools.sh
+sleep 2s
+echo "ADB ha sido instalado"
+sleep 1s
+echo "Blacksterkit ha sido instalado"
+sleep 2s
+cd ..
+clear
+ls
