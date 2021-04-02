@@ -1,6 +1,5 @@
 #!/usr/bin/python
-from termcolor import colored
-from colorama import *
+from colorama import Fore, init
 from googlesearch import *
 import urllib.request
 import subprocess
