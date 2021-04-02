@@ -1,6 +1,6 @@
 #!/usr/bin/python
 from colorama import Fore, init
-from googlesearch import *
+from googlesearch import search
 import urllib.request
 import subprocess
 import wpspin
@@ -276,7 +276,7 @@ while True:
 			ask = int(input("Escoge una opcion >>> "))
 			if ask==1:
 				log_por = "intitle:\"Component Browser Login\""
-				for i in search(log_por, start=0, num_results=30, pause=2):
+				for i in search(log_por, start = 0, num_results = 30, pause=2):
 					print(Fore.GREEN)
 					print(i)
 					print("Presione una tecla para continuar...")
@@ -284,7 +284,7 @@ while True:
 
 			elif ask==2:
 				on_dev = "inurl:/view/viewer_index.shtml"
-				for i in search(on_dev, start=0, num_results=30, pause=2):
+				for i in search(on_dev, start = 0, num_results=30, pause=2):
 					print(Fore.CYAN)
 					print(i)
 					print("Presione una tecla para continuar...")
@@ -292,7 +292,7 @@ while True:
 
 			elif ask==3:
 				web_serv = "inurl:CFIDE/adminapi"
-				for i in search(web_serv, start=0, num_results=30, pause=2):
+				for i in search(web_serv, start = 0, num_results=30, pause=2):
 					print(Fore.GREEN)
 					print(i)
 					print("Presione una tecla para continuar...")
@@ -300,7 +300,7 @@ while True:
 
 			elif ask==4:
 				vuln = "inurl:\"telerik.web.ui.webresource.axd?type=rau\""
-				for i in search(vuln, start=0, num_results=30, pause=2):
+				for i in search(vuln, start = 0, num_results = 30, pause=2):
 					print(Fore.YELLOW)
 					print(i)
 					print("Presione una tecla para continuar...")
@@ -308,7 +308,7 @@ while True:
 
 			elif ask==5:
 				Usr_ad = "ext:pwd inurl:(service | authors | administrators | users) “# -FrontPage-“"
-				for i in search(Usr_ad, start=0, num_results=30, pause=2):
+				for i in search(Usr_ad, start = 0, num_results = 30, pause=2):
 					print(Fore.GREEN)
 					print(i)
 					print("Presione una tecla para continuar...")
